@@ -1,0 +1,27 @@
+# Site settings
+title: Nodari, Lemos e Weyne Advogados Associados
+lang: pt-br
+description: >
+  Esse site está em construção.
+brand: "#54193A"
+content: "#A898A0"
+
+# Contact
+github: augustolima/nlw
+email: 
+  lemos: lemos@nlw.adv.br
+  nodari: nodari@nlw.adv.br
+  weyne: weyne@nlw.adv.br
+telefone: (51) 3029-3024
+
+# Analytics
+analytics: UA-46439998-5
+
+# Build settings
+markdown: kramdown
+baseurl: ""
+url: "http://nlw.adv.br"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,77 @@
+/*
+    Base styles!
+*/
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+/*
+    Text Elements.
+*/
+
+.page-content {
+  p, ol, dl, ul,
+  table, figure, embed, object,
+  pre, blockquote {
+    margin-bottom: $spacing-unit / 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Links
+a {
+  text-decoration: underline;
+  color: $background-color;
+}
+
+// Code and pre-formatted text.
+pre, var, tt {
+  font-family: 'Courier 10 Pitch', Courier, monospace;
+  font-size: $base-font-size * .8;
+  line-height: 1.7;
+}
+
+code, kbd {
+  font-family: 'Inconsolata', Monaco, Consolas, monospace;
+  font-size: $base-font-size * .95;
+}
+
+
+/*
+    Text shown only for screen readers.
+    Based on the work of Automattic on _s.
+*/
+.assistive-text {
+  clip: rect(.1rem, .1rem, .1rem, .1rem);
+	position: absolute !important;
+	height: .1rem;
+	width: .1rem;
+	overflow: hidden;
+
+	&:focus {
+		background-color: $background-color;
+		border-radius: .3rem;
+		box-shadow: 0 0 .2rem .2rem rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: $text-color;
+		display: block;
+		font-size: .0875rem;
+		font-weight: bold;
+		height: auto;
+		left: .5rem;
+		line-height: normal;
+		padding: 1.5rem 2.3rem 1.4rem;
+		text-decoration: none;
+		top: .5rem;
+		width: auto;
+		z-index: 100000;
+	}
+}

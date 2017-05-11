@@ -1,0 +1,33 @@
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+/*
+    Grid System
+    Based on the work by Aleksandar Goševski.
+*/
+@mixin row() {
+  white-space: nowrap;
+  @extend %clearfix;
+}
+
+@mixin col($col, $sum, $align: top) {
+ width: 100%;
+ float: none;
+ box-sizing: border-box;
+ white-space: normal;
+
+ @media (min-width: $on-laptop) {
+   width: percentage($col/$sum);
+   vertical-align: $align;
+   float: left;
+ }
+}
+
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,32 @@
+---
+# Hello, Jekyll!
+---
+
+// Color palette.
+$brand-color: {{ site.brand }};
+$content-color: {{ site.content }};
+$text-color: #222222;
+$background-color: #ffffff;
+
+$grey-color: #eeeeee;
+$grey-color-light: lighten($grey-color, 20%);
+$grey-color-dark: darken($grey-color, 40%);
+
+// Type settings
+$base-font-family: 'Lora', serif;
+$base-font-size: 1.6rem;
+$base-line-height: 1.6;
+$base-font-weight: 400;
+$base-letter-spacing: 1;
+
+// Site wrapper
+$content-width: 95rem;
+$on-palm: 30rem;
+$on-laptop: 60rem;
+
+$spacing-unit: 3rem;
+
+@import "reset",
+         "mixins",
+         "layout",
+         "scaffolding";
