@@ -10,8 +10,10 @@ Nosso site está sendo desenvolvido, por enquanto entre em contato pelos canais 
 ------------------
 _Rua dos Andradas, 1646, Sala 38, Porto Alegre/RS._
 
-**Telefone:** [{{ site.telefone }}](tel:{{ site.telefone }})<br>
+**Telefone:** [{{ site.telefone }}](tel:{{ site.telefone }})
+
 **E-mails:**
+{: #emails }
 * **Lemos:** [{{ site.email.lemos }}](mailto:{{ site.email.lemos }})<br />
 * **Nodari:** [{{ site.email.nodari }}](mailto:{{ site.email.nodari }})<br />
 * **Weyne:** [{{ site.email.weyne }}](mailto:{{ site.email.weyne }})<br />
